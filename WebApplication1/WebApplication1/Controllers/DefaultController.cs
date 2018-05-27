@@ -16,5 +16,11 @@ namespace WebApplication1.Controllers
         {
             return Ok(new { Stuff = new[] { "Get", "Some", "Stuff" } });
         }
+
+        [HttpPost]
+        public IActionResult PostSome()
+        {
+            return Ok();
+        }
     }
 }
